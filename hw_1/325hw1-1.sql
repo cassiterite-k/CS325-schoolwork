@@ -14,7 +14,7 @@ create table my_table (
 -- Need numbers in the table!
 begin
     for id in 1..5 loop
-        insert into my_table (item_id, item_count, item_price) values (id, id * 17 - 3, 41.50 / id);
+        insert into my_table (item_id, item_count, item_price) values (id, id * 17 - 3, 22.80 / id);
     end loop;
 end;
 /
