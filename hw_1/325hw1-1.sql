@@ -1,8 +1,18 @@
 -- Cass Krosby, 2026-09-02
 -- 325 HW 1 - my first table
 
+-- Delete my_table if it exists. Later versions of sqlplus seem to have 
+-- this as an if exists clause, but we're not so lucky!
+declare val number;
+begin
+	select 1 into val from all_tables where table_name = 'MY_TABLE';
+	if val = 1 then
+		execute immediate 'drop table my_table cascade constraints';
+	end if;
+end;
+/
+
 -- Table: my_table
-drop table if exists my_table cascade constraints;
 create table my_table (
     item_id    integer,
     item_name  varchar2(40),

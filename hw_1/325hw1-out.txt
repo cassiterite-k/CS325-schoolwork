@@ -1,0 +1,9 @@
+
+   ITEM_ID ITEM_NAME                                ITEM_COUNT ITEM_PRICE       
+---------- ---------------------------------------- ---------- ----------       
+         1 Life Stories of John Lennon                      14       22.8       
+         2 The Secret Lives of Swiss Cheesemakers           31       11.4       
+         3 Your Aunt's Cabinet                              48        7.6       
+         4 The Father of the Bride                          65        5.7       
+         5 Silly Symphonies, vol. 5                         82       4.56       
+
