@@ -1,0 +1,48 @@
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BOOK_ID                                   NOT NULL NUMBER(38)
+ PRICE                                              FLOAT(126)
+ NAME                                               VARCHAR2(40)
+
+
+   BOOK_ID      PRICE NAME                                                      
+---------- ---------- ----------------------------------------                  
+         1         24 Life Stories of John Lennon                               
+         2         12 The Secret Lives of Swiss Cheesemakers                    
+         3          8 Your Aunt's Cabinet                                       
+         4          6 The Father of the Bride                                   
+         5        4.8 Silly Symphonies, vol. 5                                  
+         6          4 Mistborn                                                  
+
+6 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ LOAN_ID                                            NUMBER(38)
+ LOAN_DATE                                          DATE
+ RETURN_DATE                                        DATE
+ BOOK_ID                                            NUMBER(38)
+
+
+   LOAN_ID LOAN_DATE RETURN_DA    BOOK_ID    BOOK_ID      PRICE                 
+---------- --------- --------- ---------- ---------- ----------                 
+NAME                                                                            
+----------------------------------------                                        
+         4 01-OCT-92 31-OCT-92          2          2         12                 
+The Secret Lives of Swiss Cheesemakers                                          
+                                                                                
+         3 19-DEC-24 20-JUN-25          3          3          8                 
+Your Aunt's Cabinet                                                             
+                                                                                
+         2 18-SEP-82 21-SEP-82          4          4          6                 
+The Father of the Bride                                                         
+                                                                                
+
+   LOAN_ID LOAN_DATE RETURN_DA    BOOK_ID    BOOK_ID      PRICE                 
+---------- --------- --------- ---------- ---------- ----------                 
+NAME                                                                            
+----------------------------------------                                        
+         1 21-AUG-23 28-AUG-23          5          5        4.8                 
+Silly Symphonies, vol. 5                                                        
+                                                                                
+
