@@ -1,6 +1,10 @@
 -- CS 325 Fall 2026 - Week 2 Lab
 -- Cass Krosby, 2026-09-02
 
+
+-- Outputs with spooling
+spool lab2_output.txt;
+
 -- Prompt with our names and display date
 pro 'Cass Krosby, Katie Quinn';
 select to_char(sysdate, 'DD-MM-YYYY HH24:MI:SS') as "Date" from dual;
@@ -64,8 +68,6 @@ update loans set loan_date = '18-SEP-82', return_date = '21-SEP-82' where loan_i
 update loans set loan_date = '19-DEC-24', return_date = '20-JUN-25' where loan_id = 3;
 update loans set loan_date = '01-OCT-92', return_date = '31-OCT-92' where loan_id = 4;
 
--- Outputs with spooling
-spool lab2_output.txt;
 
 describe books;
 select * from books;

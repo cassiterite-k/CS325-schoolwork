@@ -1,3 +1,51 @@
+'Cass Krosby, Katie Quinn'
+
+Date                                                                            
+-------------------                                                             
+04-09-2026 16:15:27                                                             
+
+
+PL/SQL procedure successfully completed.
+
+
+Table created.
+
+
+Table created.
+
+
+PL/SQL procedure successfully completed.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
  Name                                      Null?    Type
  ----------------------------------------- -------- ----------------------------
  BOOK_ID                                   NOT NULL NUMBER(38)
