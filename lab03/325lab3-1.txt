@@ -1,0 +1,5 @@
+Cass Krosby, Keira Flowers
+CS 325 - Lab 3 - Problem 1
+
+painter(PTR_NUM, ptr_lname, ptr_fname, ptr_dob, ptr_dod);
+painting(PAINTING_NUM, painting_title, ptg_year, ptr_num);

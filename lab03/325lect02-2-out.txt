@@ -1,0 +1,72 @@
+
+Howdy there CS 325
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table dropped.
+
+
+Table created.
+
+*** describe parts: ***
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PART_NUM                                  NOT NULL NUMBER(38)
+ PART_NAME                                 NOT NULL VARCHAR2(25)
+ QUANTITY_ON_HAND                                   NUMBER(38)
+ PRICE                                              NUMBER(6,2)
+ LEVEL_CODE                                         CHAR(3)
+ LAST_INSPECTED                                     DATE
+
+*** describe part_orders: ***
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ORDER_NUM                                 NOT NULL CHAR(6)
+ CUST_NUM                                  NOT NULL CHAR(8)
+ PART_NUM                                  NOT NULL NUMBER(38)
+ ORDER_DATE                                         DATE
+ QUANTITY                                  NOT NULL NUMBER(38)
+ ORDER_CODE                                         CHAR(1)
+ DELIVERY_CODE                             NOT NULL CHAR(1)
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+  PART_NUM PART_NAME                 QUANTITY_ON_HAND      PRICE LEV LAST_INSP  
+---------- ------------------------- ---------------- ---------- --- ---------  
+     10603 hexagonal wrench                        13       9.99 XXX 15-AUG-21  
+     10604 tire                                   287      39.99 MMM 11-SEP-26  
+     10605 bubble gum                                     876.54                
+     10602 5/8 in lug nut                        1000        .02 00X 11-SEP-26  
+
+
+ORDER_ CUST_NUM   PART_NUM ORDER_DAT   QUANTITY O D                             
+------ -------- ---------- --------- ---------- - -                             
+111111 11111111      10603 11-SEP-26          3 B U                             
+222223 22222222      10605 01-SEP-20          4 I P                             
+222222 22222222      10604 01-SEP-20          4 I P                             
+

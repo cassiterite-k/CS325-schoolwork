@@ -1,0 +1,34 @@
+'Lab Team: Cass Krosby, Keira Flowers'
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+  PART_NUM PART_NAME                 QUANTITY_ON_HAND      PRICE LEV LAST_INSP  
+---------- ------------------------- ---------------- ---------- --- ---------  
+     10603 hexagonal wrench                        13       9.99 XXX 15-AUG-21  
+     10604 tire                                   287      39.99 MMM 11-SEP-26  
+     10605 bubble gum                                     876.54                
+     10602 5/8 in lug nut                        1000        .02 00X 11-SEP-26  
+     10606 2 inch crush washer                    102         20 GGG 18-JUN-25  
+
+
+ORDER_ CUST_NUM   PART_NUM ORDER_DAT   QUANTITY O D                             
+------ -------- ---------- --------- ---------- - -                             
+111111 11111111      10603 11-SEP-26          3 B U                             
+222223 22222222      10605 01-SEP-20          4 I P                             
+222222 22222222      10604 01-SEP-20          4 I P                             
+Apples 29387236      10606 01-SEP-26          4 I U                             
+289271 39387273      10603 20-JUL-25         10 G F                             
+298379 03728309      10604 18-JAN-26         89 B P                             
+
+6 rows selected.
+

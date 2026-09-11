@@ -1,0 +1,21 @@
+Cass Krosby, Keira Flowers
+CS 325 - Lab 3 - Problem 2
+
+create table painter (
+	ptr_num     integer,
+	ptr_lname   varchar2(20),
+	ptr_fname   varchar2(20),
+	ptr_dob     date,
+	ptr_dod     date,
+	primary key (ptr_num)
+);
+
+create table painting (
+	painting_num   integer,
+	painting_title varchar2(40),
+	ptg_year       date,
+	ptr_num        integer,
+	primary key    (painting_num),
+	foreign key    (ptr_num)
+	references     painter (ptr_num)
+);
