@@ -3,7 +3,7 @@
 
 start 'set-up-ex-tbls.sql'; 
 
-spool 'lab4-out.txt';
+spool '325lab4-out.txt';
 
 prompt 'true relational selections';
 select * from empl where empl_num = '7900';
