@@ -1,0 +1,404 @@
+'true relational selections'
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP        
+---- --------------- ---------- ---- --------- ---------- ---------- ---        
+7900 James           Clerk      7698 03-DEC-17        950            300        
+
+
+DEP DEPT_NAME       DEPT_LOC                                                    
+--- --------------- ---------------                                             
+100 Accounting      New York                                                    
+
+'true relational projections'
+
+CUST_CITY       CU                                                              
+--------------- --                                                              
+Arcata          CA                                                              
+McKinleyville   CA                                                              
+Fortuna         CA                                                              
+
+
+EMPL_LAST_NAME  JOB_TITLE                                                       
+--------------- ----------                                                      
+King            President                                                       
+Smith           Clerk                                                           
+Turner          Sales                                                           
+Adams           Clerk                                                           
+Miller          Clerk                                                           
+Jones           Manager                                                         
+Martin          Sales                                                           
+Scott           Analyst                                                         
+Raimi           Manager                                                         
+James           Clerk                                                           
+Blake           Manager                                                         
+
+EMPL_LAST_NAME  JOB_TITLE                                                       
+--------------- ----------                                                      
+Ward            Sales                                                           
+Ford            Analyst                                                         
+Michaels        Sales                                                           
+
+14 rows selected.
+
+'true Cartesian product'
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7839 King            President       17-NOV-11       5000            500 100    
+Accounting      New York                                                        
+                                                                                
+7566 Jones           Manager    7839 02-APR-12       2975            200 100    
+Accounting      New York                                                        
+                                                                                
+7698 Blake           Manager    7839 01-MAY-13       2850            300 100    
+Accounting      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7782 Raimi           Manager    7839 09-JUN-12       2450            100 100    
+Accounting      New York                                                        
+                                                                                
+7902 Ford            Analyst    7566 03-DEC-12       3000            200 100    
+Accounting      New York                                                        
+                                                                                
+7369 Smith           Clerk      7902 17-DEC-12        800            200 100    
+Accounting      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7499 Michaels        Sales      7698 20-FEB-18       1600        300 300 100    
+Accounting      New York                                                        
+                                                                                
+7521 Ward            Sales      7698 22-FEB-19       1250        500 300 100    
+Accounting      New York                                                        
+                                                                                
+7654 Martin          Sales      7698 28-SEP-18       1250       1400 300 100    
+Accounting      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7788 Scott           Analyst    7566 09-NOV-18       3000            200 100    
+Accounting      New York                                                        
+                                                                                
+7844 Turner          Sales      7698 08-SEP-19       1500          0 300 100    
+Accounting      New York                                                        
+                                                                                
+7876 Adams           Clerk      7788 23-SEP-18       1100            400 100    
+Accounting      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7900 James           Clerk      7698 03-DEC-17        950            300 100    
+Accounting      New York                                                        
+                                                                                
+7934 Miller          Clerk      7782 23-JAN-16       1300            100 100    
+Accounting      New York                                                        
+                                                                                
+7839 King            President       17-NOV-11       5000            500 200    
+Research        Dallas                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7566 Jones           Manager    7839 02-APR-12       2975            200 200    
+Research        Dallas                                                          
+                                                                                
+7698 Blake           Manager    7839 01-MAY-13       2850            300 200    
+Research        Dallas                                                          
+                                                                                
+7782 Raimi           Manager    7839 09-JUN-12       2450            100 200    
+Research        Dallas                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7902 Ford            Analyst    7566 03-DEC-12       3000            200 200    
+Research        Dallas                                                          
+                                                                                
+7369 Smith           Clerk      7902 17-DEC-12        800            200 200    
+Research        Dallas                                                          
+                                                                                
+7499 Michaels        Sales      7698 20-FEB-18       1600        300 300 200    
+Research        Dallas                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7521 Ward            Sales      7698 22-FEB-19       1250        500 300 200    
+Research        Dallas                                                          
+                                                                                
+7654 Martin          Sales      7698 28-SEP-18       1250       1400 300 200    
+Research        Dallas                                                          
+                                                                                
+7788 Scott           Analyst    7566 09-NOV-18       3000            200 200    
+Research        Dallas                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7844 Turner          Sales      7698 08-SEP-19       1500          0 300 200    
+Research        Dallas                                                          
+                                                                                
+7876 Adams           Clerk      7788 23-SEP-18       1100            400 200    
+Research        Dallas                                                          
+                                                                                
+7900 James           Clerk      7698 03-DEC-17        950            300 200    
+Research        Dallas                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7934 Miller          Clerk      7782 23-JAN-16       1300            100 200    
+Research        Dallas                                                          
+                                                                                
+7839 King            President       17-NOV-11       5000            500 300    
+Sales           Chicago                                                         
+                                                                                
+7566 Jones           Manager    7839 02-APR-12       2975            200 300    
+Sales           Chicago                                                         
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7698 Blake           Manager    7839 01-MAY-13       2850            300 300    
+Sales           Chicago                                                         
+                                                                                
+7782 Raimi           Manager    7839 09-JUN-12       2450            100 300    
+Sales           Chicago                                                         
+                                                                                
+7902 Ford            Analyst    7566 03-DEC-12       3000            200 300    
+Sales           Chicago                                                         
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7369 Smith           Clerk      7902 17-DEC-12        800            200 300    
+Sales           Chicago                                                         
+                                                                                
+7499 Michaels        Sales      7698 20-FEB-18       1600        300 300 300    
+Sales           Chicago                                                         
+                                                                                
+7521 Ward            Sales      7698 22-FEB-19       1250        500 300 300    
+Sales           Chicago                                                         
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7654 Martin          Sales      7698 28-SEP-18       1250       1400 300 300    
+Sales           Chicago                                                         
+                                                                                
+7788 Scott           Analyst    7566 09-NOV-18       3000            200 300    
+Sales           Chicago                                                         
+                                                                                
+7844 Turner          Sales      7698 08-SEP-19       1500          0 300 300    
+Sales           Chicago                                                         
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7876 Adams           Clerk      7788 23-SEP-18       1100            400 300    
+Sales           Chicago                                                         
+                                                                                
+7900 James           Clerk      7698 03-DEC-17        950            300 300    
+Sales           Chicago                                                         
+                                                                                
+7934 Miller          Clerk      7782 23-JAN-16       1300            100 300    
+Sales           Chicago                                                         
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7839 King            President       17-NOV-11       5000            500 400    
+Operations      Boston                                                          
+                                                                                
+7566 Jones           Manager    7839 02-APR-12       2975            200 400    
+Operations      Boston                                                          
+                                                                                
+7698 Blake           Manager    7839 01-MAY-13       2850            300 400    
+Operations      Boston                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7782 Raimi           Manager    7839 09-JUN-12       2450            100 400    
+Operations      Boston                                                          
+                                                                                
+7902 Ford            Analyst    7566 03-DEC-12       3000            200 400    
+Operations      Boston                                                          
+                                                                                
+7369 Smith           Clerk      7902 17-DEC-12        800            200 400    
+Operations      Boston                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7499 Michaels        Sales      7698 20-FEB-18       1600        300 300 400    
+Operations      Boston                                                          
+                                                                                
+7521 Ward            Sales      7698 22-FEB-19       1250        500 300 400    
+Operations      Boston                                                          
+                                                                                
+7654 Martin          Sales      7698 28-SEP-18       1250       1400 300 400    
+Operations      Boston                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7788 Scott           Analyst    7566 09-NOV-18       3000            200 400    
+Operations      Boston                                                          
+                                                                                
+7844 Turner          Sales      7698 08-SEP-19       1500          0 300 400    
+Operations      Boston                                                          
+                                                                                
+7876 Adams           Clerk      7788 23-SEP-18       1100            400 400    
+Operations      Boston                                                          
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7900 James           Clerk      7698 03-DEC-17        950            300 400    
+Operations      Boston                                                          
+                                                                                
+7934 Miller          Clerk      7782 23-JAN-16       1300            100 400    
+Operations      Boston                                                          
+                                                                                
+7839 King            President       17-NOV-11       5000            500 500    
+Management      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7566 Jones           Manager    7839 02-APR-12       2975            200 500    
+Management      New York                                                        
+                                                                                
+7698 Blake           Manager    7839 01-MAY-13       2850            300 500    
+Management      New York                                                        
+                                                                                
+7782 Raimi           Manager    7839 09-JUN-12       2450            100 500    
+Management      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7902 Ford            Analyst    7566 03-DEC-12       3000            200 500    
+Management      New York                                                        
+                                                                                
+7369 Smith           Clerk      7902 17-DEC-12        800            200 500    
+Management      New York                                                        
+                                                                                
+7499 Michaels        Sales      7698 20-FEB-18       1600        300 300 500    
+Management      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7521 Ward            Sales      7698 22-FEB-19       1250        500 300 500    
+Management      New York                                                        
+                                                                                
+7654 Martin          Sales      7698 28-SEP-18       1250       1400 300 500    
+Management      New York                                                        
+                                                                                
+7788 Scott           Analyst    7566 09-NOV-18       3000            200 500    
+Management      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7844 Turner          Sales      7698 08-SEP-19       1500          0 300 500    
+Management      New York                                                        
+                                                                                
+7876 Adams           Clerk      7788 23-SEP-18       1100            400 500    
+Management      New York                                                        
+                                                                                
+7900 James           Clerk      7698 03-DEC-17        950            300 500    
+Management      New York                                                        
+                                                                                
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
+---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
+DEPT_NAME       DEPT_LOC                                                        
+--------------- ---------------                                                 
+7934 Miller          Clerk      7782 23-JAN-16       1300            100 500    
+Management      New York                                                        
+                                                                                
+
+70 rows selected.
+
+'true equi-join of customer and empl'
+
+CUST_I CUST_LNAME           CUST_FNAME      EMPL CUST_STREET                    
+------ -------------------- --------------- ---- ------------------------------ 
+CUST_CITY       CU CUST_ZIP   CUST_BALANCE EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  
+--------------- -- ---------- ------------ ---- --------------- ---------- ---- 
+HIREDATE      SALARY COMMISSION DEP                                             
+--------- ---------- ---------- ---                                             
+100001 Firstly              First           7499 1111 First Street              
+Fortuna         CA 95520           1111.11 7499 Michaels        Sales      7698 
+20-FEB-18       1600        300 300                                             
+                                                                                
+100002 Secondly             Second          7654 2222 Second Street             
+McKinleyville   CA 95523             222.2 7654 Martin          Sales      7698 
+28-SEP-18       1250       1400 300                                             
+
+CUST_I CUST_LNAME           CUST_FNAME      EMPL CUST_STREET                    
+------ -------------------- --------------- ---- ------------------------------ 
+CUST_CITY       CU CUST_ZIP   CUST_BALANCE EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  
+--------------- -- ---------- ------------ ---- --------------- ---------- ---- 
+HIREDATE      SALARY COMMISSION DEP                                             
+--------- ---------- ---------- ---                                             
+                                                                                
+100003 Thirdly              Third           7499 333 Third Street               
+Arcata          CA 95519-1234            0 7499 Michaels        Sales      7698 
+20-FEB-18       1600        300 300                                             
+                                                                                
+
