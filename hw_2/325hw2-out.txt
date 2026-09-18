@@ -1,0 +1,63 @@
+Cass Krosby - Homework 2
+
+Current state of client table
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CLI_ID                                    NOT NULL CHAR(4)
+ CLI_LNAME                                          VARCHAR2(12)
+ CLI_FNAME                                          VARCHAR2(8)
+ CLI_PHONE                                          CHAR(8)
+
+
+CLI_ CLI_LNAME    CLI_FNAM CLI_PHON                                             
+---- ------------ -------- --------                                             
+000A Alpha        Ann      000-0001                                             
+111B Beta         Bob      111-1112                                             
+222B Beta         Ann      222-2223                                             
+333C Carlos       David    333-3334                                             
+444D Delta        Edie     111-1112                                             
+000G Winters      Cass     326-2813                                             
+
+6 rows selected.
+
+Currnt state of video table
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ VID_ID                                    NOT NULL CHAR(6)
+ VID_FORMAT                                         VARCHAR2(9)
+ VID_PURCHASE_DATE                                  DATE
+ VID_RENTAL_PRICE                                   NUMBER(6,2)
+ VID_LENGTH                                         NUMBER(38)
+
+
+VID_ID VID_FORMA VID_PURCH VID_RENTAL_PRICE VID_LENGTH                          
+------ --------- --------- ---------------- ----------                          
+00000D DVD       10-JAN-20             1.99         73                          
+11111H HD-DVD    20-FEB-21             4.99         91                          
+22222B BluRay    30-MAR-19             1.99        105                          
+33333H HD-DVD    20-FEB-21             3.99         69                          
+44444B BluRay    04-APR-17              .99         91                          
+55555G DVD       10-SEP-25             8.35         90                          
+
+6 rows selected.
+
+Current state of rental table
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CLI_ID                                             CHAR(4)
+ VID_ID                                             CHAR(6)
+
+
+CLI_ VID_ID                                                                     
+---- ------                                                                     
+111B 11111H                                                                     
+222B 00000D                                                                     
+222B 22222B                                                                     
+333C 22222B                                                                     
+333C 00000D                                                                     
+333C 11111H                                                                     
+000A 44444B                                                                     
+000G 55555G                                                                     
+
+8 rows selected.
+
