@@ -1,4 +1,6 @@
-'true relational selections'
+Cass Krosby - Week 4 Lab
+
+true relational selections
 
 EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP        
 ---- --------------- ---------- ---- --------- ---------- ---------- ---        
@@ -9,7 +11,7 @@ DEP DEPT_NAME       DEPT_LOC
 --- --------------- ---------------                                             
 100 Accounting      New York                                                    
 
-'true relational projections'
+true relational projections
 
 CUST_CITY       CU                                                              
 --------------- --                                                              
@@ -40,7 +42,7 @@ Michaels        Sales
 
 14 rows selected.
 
-'true Cartesian product'
+true Cartesian product
 
 EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP DEP    
 ---- --------------- ---------- ---- --------- ---------- ---------- --- ---    
@@ -374,7 +376,7 @@ Management      New York
 
 70 rows selected.
 
-'true equi-join of customer and empl'
+true equi-join of customer and empl
 
 CUST_I CUST_LNAME           CUST_FNAME      EMPL CUST_STREET                    
 ------ -------------------- --------------- ---- ------------------------------ 
